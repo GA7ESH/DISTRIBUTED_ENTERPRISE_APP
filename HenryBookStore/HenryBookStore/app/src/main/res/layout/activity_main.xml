@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="171dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        android:onClick="addBook"
+        android:text="Add Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnAddBranch"
+        android:layout_width="171dp"
+        android:layout_height="100dp"
+        android:onClick="addBranch"
+        android:text="Add Branch"
+        app:layout_constraintBottom_toTopOf="@+id/btnInvReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddBook"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAddInv"
+        android:layout_width="178dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="126dp"
+        android:onClick="addInventory"
+        android:text="Add Inventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddBranch"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btnInvReport"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:onClick="viewInventory"
+        android:text="Inventory Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddInv"
+        app:layout_constraintVertical_bias="0.315" />
+
+</android.support.constraint.ConstraintLayout>
